@@ -6,7 +6,7 @@
 }
 
 .navbar {
-	background-color: #BEC3C6;
+	background-color: #EDEDED;
 	box-shadow: 0 2px 4px -1px rgba(0,0,0,0.75);
 }
 
@@ -37,6 +37,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  
 }
 
 /* Place text in the middle of the image */
@@ -47,6 +48,37 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  letter-spacing: .4rem;
+  letter-spacing: .2rem;
 }
+
 /** Hero End **/
+
+/** About Us start **/
+#about-container {
+  background-color: #EDEDED;
+  padding-bottom: 2rem;
+}
+
+/**
+#about-p {
+ padding-left: 30%;
+padding-right: 30%;
+}
+**/
+#bootstrap-overides #about {
+  
+  margin: 0, auto;
+}
+
+/** About Us end **/
+
+/** Detailing services start **/
+ .service-img {
+   width: 100%;
+   height: auto;
+ }
+
+ #bootstrap-overides .card-header {
+   background-color: #ffffff;
+ }
+/** Detailing services end **/
