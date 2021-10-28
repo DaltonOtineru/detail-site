@@ -1,3 +1,5 @@
+
+
 /** Navbar start **/
 
 .navbar-brand img {
@@ -6,7 +8,7 @@
 }
 
 .navbar {
-	background-color: #EDEDED;
+	background-color: #ffffff;
 	box-shadow: 0 2px 4px -1px rgba(0,0,0,0.75);
 }
 
@@ -19,6 +21,7 @@
 	background-color: #ffffff;
 	margin-left: 20px;
 	height: 100%;
+  padding: 18px 18px;
 }
 /** Navbar end **/
  
@@ -81,4 +84,14 @@ padding-right: 30%;
  #bootstrap-overides .card-header {
    background-color: #ffffff;
  }
+ .card-effect {
+  box-shadow: 0 8px 22px rgba(0,0,0,0.2);
+  background-color: var(--white);
+  padding: 25px;
+  transition: all 0.35s ease;
+}
+.card-effect:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
 /** Detailing services end **/
