@@ -1,97 +1,317 @@
+/** Fonts Start **/
 
+/** Fonts End **/
 
 /** Navbar start **/
 
 .navbar-brand img {
-	height: 50px;
-	width: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 .navbar {
-	background-color: #ffffff;
-	box-shadow: 0 2px 4px -1px rgba(0,0,0,0.75);
+  background-color: #e4e4e4;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.75);
 }
 
 .navbar-header .navbar-brand {
-	letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
+  color: rgb(2, 117, 216) !important;
+  /*color: #464646 !important;*/
 }
-
+.navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  cursor: pointer;
+  border-right: solid rgb(2, 117, 216) 2px;
+  line-height: 8px;
+  font-weight: 600;
+  color: #464646 !important;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: rgb(2, 117, 216) !important;
+}
+/**
 .navbar-nav button {
-	border: 1px solid #000000;
-	background-color: #ffffff;
-	margin-left: 20px;
-	height: 100%;
-  padding: 18px 18px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  margin-left: 20px;
+  height: 100%;
+    padding: 18px 18px;
 }
+**/
+.navbar-nav button {
+  border-radius: 0%;
+  text-transform: uppercase;
+}
+
 /** Navbar end **/
- 
-/** Hero start **/
 
-/* The hero image */
-.hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/gwagon.jpg");
-
-  /* Set a specific height */
-  height: 100vh;
-
-  /* Position and center the image to scale nicely on all screens */
+/** Hero header start **/
+#header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url(img/gwagon.jpg);
+  background-size: 100% auto;
+  height: 95vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  
+  background-attachment: fixed;
 }
+#header-inner {
+  padding-top: 35%;
 
-/* Place text in the middle of the image */
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  letter-spacing: .2rem;
+  margin-left: 2rem;
 }
+#hero-header {
+  letter-spacing: 0.3rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+#hero-p {
+  line-height: 2.2;
+}
+/**======== Hero header end ========**/
 
-/** Hero End **/
-
-/** About Us start **/
-#about-container {
-  background-color: #EDEDED;
+/**======= Card overlay start =======**/
+#card-row {
+  margin: 0 auto;
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
+/*Margin 0-auto off looks better on larger screens ^ */
 
-/**
-#about-p {
- padding-left: 30%;
-padding-right: 30%;
-}
-**/
-#bootstrap-overides #about {
-  
-  margin: 0, auto;
+#card-overlay {
+  margin: 0 auto;
 }
 
-/** About Us end **/
+.overlay-cards {
+  color: #fff;
+  font-weight: 400;
+  border-radius: 0% !important;
+  border: none !important;
+}
 
-/** Detailing services start **/
- .service-img {
-   width: 100%;
-   height: auto;
- }
+.overlay-headers img {
+  height: 80px;
+}
+.overlay-cards p {
+  color: #7e7e7e;
+  line-height: 1.5;
+  /* 5a5a5a */
+}
 
- #bootstrap-overides .card-header {
-   background-color: #ffffff;
- }
- .card-effect {
-  box-shadow: 0 8px 22px rgba(0,0,0,0.2);
-  background-color: var(--white);
+.overlay-bodies {
+  padding: 1rem 0rem !important;
+}
+.overlay-bodies h4 {
+  border-left: 3px solid #000;
+  padding-left: 0.5rem;
+  color: rgb(2, 117, 216) !important;
+}
+.fa-calendar-check {
+  font-size: 100px;
+  color: #000;
+}
+
+/**======== Card overlay End =========**/
+
+/**======== Paralax Scrolling IMG Start =======**/
+
+.p-img {
+  background-image: url(img/scion-spray.jpg);
+  min-height: 30rem;
+  max-height: 40rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  background-attachment: fixed;
+  position: relative;
+}
+.p-text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.4rem;
+  z-index: 2;
+}
+
+.p-text .border {
+  background-color: rgba(180, 180, 180, 0.6);
+  color: #000;
+  padding: 1rem;
+}
+
+/**======= Paralax Scrolling IMG End =========**/
+
+/**======= Detailing services start =======**/
+
+#detail-services {
+  letter-spacing: 0.2rem;
+  color: #464646;
+}
+#service-hr {
+  margin: 0 auto;
+  height: 2px;
+  border: none;
+  background-color: rgb(2, 117, 216);
+}
+.service-img {
+  width: 100%;
+  height: auto;
+}
+
+#bootstrap-overides .card-header {
+  background-color: #ffffff;
+  color: #464646;
+  border-bottom: none !important;
+}
+#bootstrap-overides .card-header h3 {
+  color: rgb(2, 117, 216);
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+}
+.card-effect {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1) !important;
   padding: 25px;
   transition: all 0.35s ease;
+  backdrop-filter: blur(30px) !important;
 }
 .card-effect:hover {
   box-shadow: none;
   transform: translateY(5px);
 }
-/** Detailing services end **/
+#bootstrap-overides .center-cards {
+  justify-content: center;
+  margin: 0 auto;
+}
+.card-body {
+  color: #5b5b5b;
+}
+.card-body ul {
+  list-style-type: none;
+}
+.detail-row {
+  margin-bottom: 2rem;
+}
+.glass {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(30px) !important;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+/**======== Detailing services end ======**/
+/**======== Additional Services start ====**/
+.additional {
+  color: rgb(2, 117, 216);
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+}
+.additional-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.add {
+  width: 33%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 2rem;
+}
+.add h3 {
+  font-weight: 300;
+  color: #5b5b5b;
+  display: block;
+}
+
+.add img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  filter: brightness(85%);
+}
+/**======== Additional Services End ====**/
+
+p {
+  max-width: 35rem;
+}
+
+/**======= Footer Start =====**/
+
+.footer {
+  background-color: #212329;
+  padding-bottom: 3rem;
+  min-height: 20vh;
+}
+
+.footer-heading {
+  color: rgb(2, 117, 216);
+  letter-spacing: 0.1rem;
+}
+#links,
+#help {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  line-height: 2rem;
+  padding-left: 2rem !important;
+}
+#links a,
+#help a {
+  text-decoration: none;
+  color: #fff;
+}
+#links a:hover,
+#help a:hover {
+  color: rgb(2, 117, 216);
+}
+
+/**======= Footer End =====**/
+
+/**========= Media Queries =======**/
+
+@media only screen and (max-width: 992px) {
+  .navbar-nav .nav-item .nav-link {
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    line-height: 1.4;
+  }
+}
+@media only screen and (min-width: 993px) {
+  #card-row {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .additional-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .add {
+    width: 90%;
+
+    margin-top: 2rem;
+  }
+  .add img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    filter: brightness(85%);
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1195px) {
+  .add h3 {
+    font-size: 24px;
+  }
+}

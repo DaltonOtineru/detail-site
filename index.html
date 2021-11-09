@@ -1,21 +1,26 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    <!-------- Required meta tags ------>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- My CSS Sheet -->
+    <!-------- My CSS Sheet -------->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- Bootstrap CSS -->
+    <!-------- Bootstrap CSS ------>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<!-- Font Awesome CDN -->
+	<!-------- Font Awesome CDN ------->
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<!------- Roboto Font ------->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
+	<!-------- Title ------->
     <title>Fritzer Mobile Detailing</title>
   </head>
   <body id="bootstrap-overides">
   	<!-- navbar start -->
 
-  	<nav class="navbar navbar-expand-md navbar-light">
+  	<nav class="navbar navbar-expand-lg navbar-light sticky-top">
   		<div class="container navbar-header align-center text-center">
   			<a class="navbar-brand" href="#">
   				<img src="img/cknot.svg">
@@ -30,17 +35,17 @@
   						<a class="nav-link" href="#">Home</a>
   					</li>
   					<li class="nav-item">
-  						<a class="nav-link" href="#">About</a>
+  						<a class="nav-link" href="#card-overlay">About</a>
   					</li>
   					<li class="nav-item">
-  						<a class="nav-link" href="#">Services</a>
+  						<a class="nav-link" href="#service">Services</a>
   					</li>
   					<li class="nav-item">
-  						<a class="nav-link" href="#">Contact</a>
+  						<a class="nav-link" href="#footer">Contact</a>
   					</li>
   					<li>
-  						<button class="btn" type="button">
-  							BOOK APPOINTMENT
+  						<button class="btn btn-lg btn-primary ms-3" type="button">
+  							Schedule A Detail
   						</button>
   					</li>
   				</ul>
@@ -52,47 +57,105 @@
   	<!-- navbar section end -->
 
   	<!-- Hero section start -->
-
-  	<div class="hero-image">
-	  <div class="hero-text">
-	    <h1>Fritzer Mobile Detailing</h1>
-	    <p>Superior Service</p>
-	    
-	  </div>
-	</div>
+      <div class="container-fluid" id="header">
+          <div class="header-inner" id="header-inner">
+              <div class="row">
+                  <div class="col-12 col-md-10 col-lg-8 text-white" id="header-text">
+                      <h1 class="display-4" id="hero-header">Fritzer Mobile Detail</h1>
+                      <p class="lead" id="hero-p"> I am a San Diego native serving all of San Diego for your vehicles necessities. </p>
+                      <button class="button btn-lg btn-primary" id="hero-button">Schedule A Detail</button>
+                  </div>
+                </div>
+          </div>
+      </div>
+                  
+                
+                            
 
   	<!-- Hero section End -->
-  
-	<!-- About us section start-->
-	<div class="container-fluid" id="about-container">
-		<div class="container padding text-center">
-			<div class="row about text-center align-items-center" id="about">
-				<div class="col-12 pt-3">
-					<h1 class="display-4">About Us</h1>
-				</div>
-				<hr>
-				<div class="col-12 text-center justify-center align-items-center" id="about-p-div">
-					<p class="lead text-center" id="about-p"> I am a San Diego native serving all of San Diego for your vehicles necessities. 100% mobile and self contained for the process of detailing from start to finish. You choose the location and time frame, and I’ll be there.</p>
-				</div>
-			</div>
+      
+    <!--==== Card overlap start =====-->
+
+    <div class="container d-flex space-between" id="card-overlay">
+        <div class="row " id="card-row">
+            <div class="col-12 col-lg-4 d-flex align-self-stretch">
+                <div class="card overlay-cards">
+                    <div class="cardheader overlay-headers">
+                        <div>
+					
+							<img src="https://img.icons8.com/ios/100/000000/calendar--v1.png"/>
+                            
+					    </div>
+                        
+                    </div>
+                    <div class="card-body overlay-bodies">
+                        <h4 class="text-dark">Easily Schedule a Detail</h4>
+                        <p>Effortlessly book an appointment for a detail! Either online, by phone or you can even text to make an appointment.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <div class="card overlay-cards">
+                    <div class="cardheader overlay-headers pl-3">
+                        <div><img src="https://img.icons8.com/ios/100/000000/car-cleaning.png"/>
+						</div>
+                    </div>
+                    <div class="card-body overlay-bodies">
+						<h4 class="text-primary">We'll Come To You</h4>
+                		<p>Once you schedule your professional detail, We will arive at your home, or preferred location with all necessary power, water and supplies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <div class="card overlay-cards">
+                    <div class="cardheader overlay-headers pl-3">
+                       <div><img src="img/sparkle.svg" alt=""></div>
+                    </div>
+                    <div class="card-body overlay-bodies">
+						<h4 class="text-primary">Enjoy your clean car!</h4>
+                        <p>Once your car is sparklingly clean, you can pay digitally in just a few moments. We strive to make your experience both simple and enjoyable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--==== Card overlap end =====-->
+
+	<!--==== Paralax Scrolling IMG Start ====-->
+
+	<div class="p-img">
+		<div class="p-text">
+			<span class="border">
+				Attention To Detail
+			</span>
 		</div>
 	</div>
-		
-	<!-- About us section end -->
+
+	<!--==== Paralax Scrolling IMG End ====-->
 
 	<!-- Detailing services section start-->
 
-	<div class="container-fluid mt-3">
-		<div class="row g-3">
-			<div class="col-12 col-md-6 col-lg-6 col-xl-3">
+
+
+	<div class="container-fluid mt-3" id="service">
+		<div class="row g-3 detail-row">
+            <div class="col-12 text-center">
+                <h1 class="display-4" id="detail-services">Detailing Services</h1>
+                <hr class="col-2 my-3" id="service-hr">
+            </div>
+			<div class="col-12 col-md-6 col-lg-6 col-xl-4 d-flex align-self-stretch">
 				<div class="card card-effect">
 					<div class="card-header text-center" id="test">
 						<h3>Standard Wash</h3>
-						<p>Time: 45 mins</p>
-						
+						<p class="text-center">Cars: $45 | Trucks & SUV: $50</p>
+						<p class="text-muted">45 mins</p>
+						<button class="btn btn-outline-primary mb-2">Book Detail</button>
 					</div>
-					<p class="text-center">Cars: $45 | Trucks & SUV: $50</p>
-					<img src="img/standard.png" alt="bmw" class="service-img">
+					<img src="img/scion.jpg" alt="bmw" class="service-img">
 					<div class="card-body">
 						<p>Exterior:</p>
 						<ul>
@@ -107,20 +170,24 @@
 							<li>Full vacuum</li>
 							<li>Dust interior</li>
 						</ul>
+						
 					</div>
 				</div>
 			</div>
+					
+						
 		
-			<div class="col-md-6 col-lg-6 col-xl-3">
+			<div class="col-md-6 col-lg-6 col-xl-4 d-flex align-self-stretch">
 				<div class="card card-effect">
 					<div class="card-header text-center">
 						<h3>Standard Detail</h3>
 						<p class="text-center">Cars: $160 | Trucks & SUV: $175</p>
 						<p class="text-muted">2-3 hours</p>
+						<button class="btn btn-outline-primary mb-2">Book Detail</button>
 						
 					</div>
 					
-					<img src="img/standard.png" alt="car detail" class="service-img">
+					<img src="img/foamed2.jpg" alt="bmw" class="service-img">
 					<div class="card-body">
 						<p>Exterior:</p>
 						<ul>
@@ -140,15 +207,16 @@
 			</div>
 						
 		
-			<div class="col-12 col-md-6 col-lg-6 col-xl-3">
+			<div class="col-12 col-md-6 col-lg-6 col-xl-4 d-flex align-self-stretch">
 				<div class="card card-effect">
 					<div class="card-header text-center">
 						<h3>Premium Detail</h3>
 						<p class="text-center">Cars: $260 | Trucks & SUV: $275</p>
 						<p class="text-muted text-center">3-4 Hours</p>
+						<button class="btn btn-outline-primary mb-2">Book Detail</button>
 					</div>
 					
-					<img src="img/standard.png" alt="car detail" class="service-img">
+					<img src="img/foamed.jpg" alt="car detail" class="service-img">
 					<div class="card-body">
 						<p>Exterior:</p>
 						<ul>
@@ -172,13 +240,15 @@
 			</div>
 							
 		
-			<div class="col-12 col-md-6 col-lg-6 col-xl-3">
-				<div class="card card-effect">
-					<h3 class="card-header text-center">
-						Interior Detail
-					</h3>
-					<p class="text-center">Cars, Trucks & SUV: $125</p>
-					<img src="img/vacuum.png" alt="bmw" class="service-img">
+			<div class="col-12 col-md-6 col-lg-6 col-xl-4 ml-xl-auto d-flex align-self-stretch align-self-center">
+				<div class="card card-effect center-cards">
+					<div class="card-header text-center">
+						<h3>Interior Detail</h3>
+						<p class="text-center">Cars | Trucks & SUV: $125</p>
+						<p class="text-muted text-center">1-2 Hours</p>
+						<button class="btn btn-outline-primary mb-2">Book Detail</button>
+					</div>
+					<img src="img/interior.jpg" alt="bmw" class="service-img">
 					<div class="card-body">
 						<ul>
 							<li>Deep vacuuming</li>
@@ -192,14 +262,18 @@
 					</div>
 				</div>
 			</div>
+					
 
-			<div class="col-12 col-md-6 col-lg-6 col-xl-3">
-				<div class="card card-effect">
-					<h3 class="card-header text-center">
-						Exterior Detail
-					</h3>
-					<p class="text-center">Cars, Trucks & SUV: $125</p>
-					<img src="img/premium.png" alt="bmw" class="service-img">
+			<div class="col-12 col-md-6 col-lg-6 col-xl-4 mr-xl-auto d-flex align-self-stretch align-self-center">
+				<div class="card card-effect center-cards">
+					<div class="card-header text-center">
+						<h3>Exterior Detail</h3>
+					
+						<p class="text-center">Cars, Trucks & SUV: $125</p>
+						<p class="text-muted text-center">1-2 Hours</p>
+						<button class="btn btn-outline-primary mb-2">Book Detail</button>
+				    </div>
+					<img src="img/wax.jpg" alt="bmw" class="service-img">
 					<div class="card-body">
 						<ul>
 							<li>Wash</li>
@@ -215,8 +289,20 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="col-12 col-md-6 col-lg-6 col-xl-3">
+		</div>
+	</div>
+			
+	<!--
+			<div class="col-12 col-md-6 col-lg-6 col-xl-4 d-flex align-self-stretch">
+				<div class="glass">
+					<h3>Additional Services</h3>
+					<img src="img/engine.png" alt="bmw" class="service-img">
+				</div>
+			</div>
+		</div>
+	</div>
+			
+			<div class="col-12 col-md-6 col-lg-6 col-xl-4 d-flex align-self-stretch">
 				<div class="card card-effect">
 					<h3 class="card-header text-center">
 						Additional Services
@@ -229,13 +315,39 @@
 			</div>
 		</div>
 	</div>
-	
+-->
 	
 
 	<!-- Detailing Services section End-->
+	 <!--Additional services start -->
+	 <div class="container additional-container">
+		<h3 class="text-center additional">- Additional Services -</h3>
+		<div class="additional-inner">
+			<div class="add">
+				<h3 class="text-center">Engine Bay Detail | $110</h3>
+				<div class="add-img1"></div>
+				<!--<p class="text-muted">1-2 Hours</p> -->
+				<img src="img/engine.png" alt="clean car engine"> 
+				
+			</div>
+			<div class="add">
+				<h3 class="text-center">Pet Hair Removal | $160</h3>
+				<!--<p class="text-muted">2 Hours</p>-->
+				<img src="img/pet.png" alt="dog sitting in car">
+			</div>
+			<div class="add">
+				<h3 class="text-center">Tint Removal | $200</h3>
+				<!--<p class="text-muted">1-2 Hours</p>-->
+				<img src="img/tint.png" alt="removing window tint">
+			</div>
+		</div>
+	</div>
 
+
+	<!-- Additional services end -->
 
 	<!-- Contact Us section start-->
+
 
 
 	<!-- Contact Us section end-->
@@ -243,12 +355,30 @@
 	
 	<!-- Footer section start-->
 
+	<div class="footer" id="footer">
+		<div class="container">
+			<div class="row footer-row justify-content-center">
+				<div class="col-12 col-md-3" id="links">
+					<h5 class="footer-heading">Links</h5>
+					<a href="#">Book a Detail</a>
+					<a href="#service">Detail Packages</a>
+					<a href="#">Testimonials</a>
+				</div>
+				<div class="col-12 col-md-3" id="help">
+					<h5 class="footer-heading">Help</h5>
+					<a href="mailto:fritzermobiledetail@gmail.com" target="_blank">Contact Us</a>
+					<a href="tel:6199550226">619-955-0226</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
+				
 	<!-- Footer section end-->
 
-    
-	
-	
+
+
+
 	<!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -258,140 +388,3 @@
   </body>
 </html>
 
-<!-- 
-	<div class="container-fluid mt-3">
-			<div class="row ">
-				<div class="col-12 col-md-6 col-lg-6 col-xl-3">
-					<div class="card">
-						<h3 class="card-header text-center">
-							Standard Wash
-						</h3>
-						<p class="text-center">Cars: $45 Trucks/SUV: $50<br> Time: 45mins</p>
-						<img src="img/standard.png" alt="bmw" class="service-img">
-						<div class="card-body">
-							<p>Exterior:</p>
-							<ul>
-								<li>Wash</li>
-								<li>Degrease wheels</li>
-								<li>Dress tires</li>
-								<li>Windows</li>
-								<li>Mirrors</li>
-							</ul>
-							<p>Interior:</p>
-							<ul>
-								<li>Full vacuum</li>
-								<li>Dust interior</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			
-				<div class="col-md-6 col-lg-6 col-xl-3">
-					<div class="card">
-						<h3 class="card-header text-center">
-							Standard Detail
-						</h3>
-						<img src="img/standard.png" alt="car detail" class="service-img">
-						<div class="card-body">
-							<p>Exterior:</p>
-							<ul>
-								<li>Hand wax</li>
-								<li>Replenish plastics and chrome</li>
-								<li>Bug & tar removal</li>
-							</ul>
-							<p>Interior:</p>
-							<ul>
-								<li>Deep vacuum</li>
-								<li>Dress plastics</li>
-								<li>Leather replenish</li>
-								<li>Air freshener</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-							
-			
-				<div class="col-12 col-md-6 col-lg-6 col-xl-3">
-					<div class="card">
-						<h3 class="card-header text-center">
-							Premium Detail
-						</h3>
-						<img src="img/red-car.png" alt="car detail" class="service-img">
-						<div class="card-body">
-							<p>Exterior:</p>
-							<ul>
-								<li>Hand wax</li>
-								<li>Clay bar treatment</li>
-								<li>Replenish plastics and chrome</li>
-								<li>Bug & tar removal</li>
-							</ul>
-							<p>Interior:</p>
-							<ul>
-								<li>Deep vacuum</li>
-								<li>Dress plastics</li>
-								<li>Deep Leather replenish</li>
-								<li>Carpet/mat soil extraction</li>
-								<li>Carpet/mat shampoo</li>
-								<li>Stain removal</li>
-								<li>Air freshener</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			
-				<div class="col-12 col-md-6 col-lg-6 col-xl-3">
-					<div class="card">
-						<h3 class="card-header text-center">
-							Interior Detail
-						</h3>
-						<img src="img/vacuum.png" alt="bmw" class="service-img">
-						<div class="card-body">
-							<ul>
-								<li>Deep vacuuming</li>
-								<li>Dress all plastics</li>
-								<li>Deep leather replenish</li>
-								<li>Carpet & mat soil extraction</li>
-								<li>Carpets & mats shampoo</li>
-								<li>Stain Removal</li>
-								<li>Air Freshener</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-12 col-md-6 col-lg-6 col-xl-3">
-					<div class="card">
-						<h3 class="card-header text-center">
-							Exterior Detail
-						</h3>
-						<img src="img/premium.png" alt="bmw" class="service-img">
-						<div class="card-body">
-							<ul>
-								<li>Wash</li>
-								<li>Degrease wheels</li>
-								<li>Dress tires</li>
-								<li>Windows</li>
-								<li>Mirrors</li>
-								<li>Hand wax</li>
-								<li>Replenish plastics & chrome</li>
-								<li>Bug & tar removal</li>
-								<li>Clay bar treatment (+$45)</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-12 col-md-6 col-lg-6 col-xl-3">
-					<div class="card">
-						<h3 class="card-header text-center">
-							Exterior Detail
-						</h3>
-						<img src="img/premium.png" alt="bmw" class="service-img">
-						<div class="card-body">
-						
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	-->
