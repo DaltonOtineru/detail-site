@@ -388,6 +388,36 @@
 
 	<div class="footer" id="footer">
 		<div class="container">
+			<div class="form-container">
+				<div class="form-inner">
+					<form action="https://formspree.io/f/mleaqvrl" method="POST">
+						<div class="form-header">
+							<h4>Contact</h4>
+							<!-- <p>Please include your preffered time & location, as well as vehicle make & model if you're scheduling a detail.</p> -->
+						</div>
+						<div class="name-div">
+							<input type="text" name="Fname" id="Fname-box" placeholder="First Name" autocomplete="off" required>
+							<input type="text" name="Lname" id="Lname-box" placeholder="Last Name" autocomplete="off" required>
+						</div>
+						<div class="contact-info-div">
+							<input type="email" name="Email" id="Mail-box" placeholder="Email Address" autocomplete="off" required>
+							<input type="tel" name="Phone" id="Phone-box" placeholder="Phone Number" autocomplete="off" required>
+						</div>	
+						<!-- <div class="phone-div">
+							<input type="tel" name="Phone" id="Phone-box" placeholder="Phone Number" autocomplete="off" required>
+						</div> -->
+						<div class="messages-div">
+							<textarea name="Message" rows="1" class="carDetailBox" placeholder="Vehicle make & model" required></textarea>
+							<textarea name="Message" rows="4"class="msgBox" placeholder="Send us a message" required></textarea>
+						</div>
+						<div class="pt-2 caption text-muted">If you're scheduling a detail, please include your preferred time and location.</div>
+						<div class="button-div">
+							<button type="submit" class="form-button">Submit</button>
+						</div>
+						
+					</form>
+				</div>
+			</div>
 			<div class="row footer-row justify-content-center">
 				<div class="col-12 col-md-3" id="links">
 					<h5 class="footer-heading">Links</h5>
