@@ -18,13 +18,14 @@
     <title>Fritzer Mobile Detailing</title>
   </head>
   <body id="bootstrap-overides">
-  	<!-- navbar start -->
+  	
+	<!-- navbar start -->
 
-  	<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  	<nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbar">
   		<div class="container navbar-header align-center text-center">
-  			<a class="navbar-brand" href="#">
+  			<a class="navbar-brand align-items-center" href="#">
   				<img src="img/cknot.svg">
-  				Fritzer Mobile Detail 
+  				<span>Fritzer Mobile Detail</span>  
   			</a>
   			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   				<span class="navbar-toggler-icon"></span>
@@ -40,18 +41,26 @@
   					<li class="nav-item">
   						<a class="nav-link" href="#service">Services</a>
   					</li>
-  					<li class="nav-item">
-  						<a class="nav-link" href="#footer">Contact</a>
-  					</li>
-  					<li>
-  						<button class="btn btn-lg btn-primary ms-3" type="button">
-  							Schedule A Detail
-  						</button>
-  					</li>
-  				</ul>
-  			</div>
-  		</div>
-  	</nav>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Contact
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="tel:6199550226">Call</a></li>
+							<li><a class="dropdown-item" href="mailto:fritzermobiledetail@gmail.com" target="_blank">Email</a></li>
+							
+						</ul>
+					</li>
+					<li>
+						<a href="mailto:fritzermobiledetail@gmail.com" target="_blank"><button class="btn btn-lg btn-primary ms-3" type="button" >
+							Schedule A Detail
+						</button></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+  					
   				
 
   	<!-- navbar section end -->
@@ -63,7 +72,10 @@
                   <div class="col-12 col-md-10 col-lg-8 text-white" id="header-text">
                       <h1 class="display-4" id="hero-header">Fritzer Mobile Detail</h1>
                       <p class="lead" id="hero-p"> I am a San Diego native serving all of San Diego for your vehicles necessities. </p>
-                      <button class="button btn-lg btn-primary" id="hero-button">Schedule A Detail</button>
+                      <a href="mailto:fritzermobiledetail@gmail.com" target="_blank" class="hero-btn-a"><button class="button btn-lg btn-primary" id="hero-button">Schedule A Detail</button></a>
+					  <a href="tel:6199550226">
+						  <button class="button btn-lg btn-outline-primary" id="hero-phone-btn" >Call Now</button>
+					  </a>
                   </div>
                 </div>
           </div>
@@ -90,7 +102,7 @@
                     </div>
                     <div class="card-body overlay-bodies">
                         <h4 class="text-dark">Easily Schedule a Detail</h4>
-                        <p>Effortlessly book an appointment for a detail! Either online, by phone or you can even text to make an appointment.</p>
+                        <p class="top-cards">Effortlessly book an appointment for a detail! Either online, by phone or you can even text to make an appointment.</p>
                     </div>
                 </div>
             </div>
@@ -103,7 +115,7 @@
                     </div>
                     <div class="card-body overlay-bodies">
 						<h4 class="text-primary">We'll Come To You</h4>
-                		<p>Once you schedule your professional detail, We will arive at your home, or preferred location with all necessary power, water and supplies.</p>
+                		<p class="top-cards">Once you schedule your professional detail, We will arive at your home, or preferred location with all necessary power, water and supplies.</p>
                     </div>
                 </div>
             </div>
@@ -115,7 +127,7 @@
                     </div>
                     <div class="card-body overlay-bodies">
 						<h4 class="text-primary">Enjoy your clean car!</h4>
-                        <p>Once your car is sparklingly clean, you can pay digitally in just a few moments. We strive to make your experience both simple and enjoyable.</p>
+                        <p class="top-cards">Once your car is sparklingly clean, you can pay digitally in just a few moments. We strive to make your experience both simple and enjoyable.</p>
                     </div>
                 </div>
             </div>
@@ -141,7 +153,7 @@
 
 
 
-	<div class="container-fluid mt-3" id="service">
+	<div class="container mt-3" id="service">
 		<div class="row g-3 detail-row">
             <div class="col-12 text-center">
                 <h1 class="display-4" id="detail-services">Detailing Services</h1>
@@ -151,8 +163,19 @@
 				<div class="card card-effect">
 					<div class="card-header text-center" id="test">
 						<h3>Standard Wash</h3>
-						<p class="text-center">Cars: $45 | Trucks & SUV: $50</p>
-						<p class="text-muted">45 mins</p>
+						<hr>
+						<div class="text-center services-costs">
+							<div class="top-pr">
+								<p>Cars: $45 <span>| </span></p>
+								<p> Small Trucks & SUV: $50 </p>
+							</div>	
+							<div class="bottom-pr">
+								<p> Full Size Trucks & SUV: $50</p>
+							</div>
+						</div>
+						<div class="text-center service-hours">
+							<p class="text-muted text-center justify-content-center">45 minutes</p>
+						</div>
 						<button class="btn btn-outline-primary mb-2">Book Detail</button>
 					</div>
 					<img src="img/scion.jpg" alt="bmw" class="service-img">
@@ -181,8 +204,19 @@
 				<div class="card card-effect">
 					<div class="card-header text-center">
 						<h3>Standard Detail</h3>
-						<p class="text-center">Cars: $160 | Trucks & SUV: $175</p>
-						<p class="text-muted">2-3 hours</p>
+						<hr>
+						<div class="text-center services-costs">
+							<div class="top-pr">
+								<p>Cars: $160 <span>| </span></p>
+								<p> Small Trucks & SUV: $175 </p>
+							</div>	
+							<div class="bottom-pr">
+								<p> Full Size Trucks & SUV: $195</p>
+							</div>
+						</div>
+						<div class="text-center service-hours">
+							<p class="text-muted text-center justify-content-center">2-3 hours</p>
+						</div>
 						<button class="btn btn-outline-primary mb-2">Book Detail</button>
 						
 					</div>
@@ -191,13 +225,18 @@
 					<div class="card-body">
 						<p>Exterior:</p>
 						<ul>
+							<li>Wash</li>
 							<li>Hand wax</li>
+							<li>Degrease wheels</li>
+							<li>Dress tires</li>
+							<li>Windows & mirrors</li>
 							<li>Replenish plastics and chrome</li>
 							<li>Bug & tar removal</li>
 						</ul>
 						<p>Interior:</p>
 						<ul>
 							<li>Deep vacuum</li>
+							<li>Dust interior</li>
 							<li>Dress plastics</li>
 							<li>Leather replenish</li>
 							<li>Air freshener</li>
@@ -211,23 +250,36 @@
 				<div class="card card-effect">
 					<div class="card-header text-center">
 						<h3>Premium Detail</h3>
-						<p class="text-center">Cars: $260 | Trucks & SUV: $275</p>
-						<p class="text-muted text-center">3-4 Hours</p>
+						<hr>
+						<div class="text-center services-costs">
+							<div class="top-pr">
+								<p>Cars: $260 <span>| </span></p>
+								<p> Small Trucks & SUV: $275 </p>
+							</div>	
+							<div class="bottom-pr">
+								<p> Full Size Trucks & SUV: $295</p>
+							</div>
+						</div>
+						<div class="text-center service-hours">
+							<p class="text-muted text-center justify-content-center">3-4 hours</p>
+						</div>
 						<button class="btn btn-outline-primary mb-2">Book Detail</button>
 					</div>
-					
 					<img src="img/foamed.jpg" alt="car detail" class="service-img">
 					<div class="card-body">
 						<p>Exterior:</p>
 						<ul>
+							<li>Wash</li>
+							<li>Degrease wheels</li>
+							<li>Dress tires</li>
 							<li>Hand wax & clay bar treatment</li>
-							
 							<li>Replenish plastics and chrome</li>
 							<li>Bug & tar removal</li>
 						</ul>
 						<p>Interior:</p>
 						<ul>
 							<li>Deep vacuum</li>
+							<li>Dust interior</li>
 							<li>Dress plastics</li>
 							<li>Deep Leather replenish</li>
 							<li>Carpet & mat soil extraction/shampoo</li>
@@ -244,7 +296,8 @@
 				<div class="card card-effect center-cards">
 					<div class="card-header text-center">
 						<h3>Interior Detail</h3>
-						<p class="text-center">Cars | Trucks & SUV: $125</p>
+						<hr>
+						<p class="text-center">Cars <span class="service-span">|</span> Trucks & SUV: $125</p>
 						<p class="text-muted text-center">1-2 Hours</p>
 						<button class="btn btn-outline-primary mb-2">Book Detail</button>
 					</div>
@@ -268,8 +321,8 @@
 				<div class="card card-effect center-cards">
 					<div class="card-header text-center">
 						<h3>Exterior Detail</h3>
-					
-						<p class="text-center">Cars, Trucks & SUV: $125</p>
+						<hr>
+						<p class="text-center">Cars <span class="service-span">|</span> Trucks & SUV: $125</p>
 						<p class="text-muted text-center">1-2 Hours</p>
 						<button class="btn btn-outline-primary mb-2">Book Detail</button>
 				    </div>
@@ -292,30 +345,7 @@
 		</div>
 	</div>
 			
-	<!--
-			<div class="col-12 col-md-6 col-lg-6 col-xl-4 d-flex align-self-stretch">
-				<div class="glass">
-					<h3>Additional Services</h3>
-					<img src="img/engine.png" alt="bmw" class="service-img">
-				</div>
-			</div>
-		</div>
-	</div>
-			
-			<div class="col-12 col-md-6 col-lg-6 col-xl-4 d-flex align-self-stretch">
-				<div class="card card-effect">
-					<h3 class="card-header text-center">
-						Additional Services
-					</h3>
-					<img src="img/engine.png" alt="bmw" class="service-img">
-					<div class="card-body">
-					
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
--->
+	
 	
 
 	<!-- Detailing Services section End-->
@@ -344,6 +374,7 @@
 	</div>
 
 
+
 	<!-- Additional services end -->
 
 	<!-- Contact Us section start-->
@@ -360,13 +391,13 @@
 			<div class="row footer-row justify-content-center">
 				<div class="col-12 col-md-3" id="links">
 					<h5 class="footer-heading">Links</h5>
-					<a href="#">Book a Detail</a>
+					<a href="mailto:fritzermobiledetail@gmail.com" target="_blank">Book a Detail</a>
 					<a href="#service">Detail Packages</a>
 					<a href="#">Testimonials</a>
 				</div>
 				<div class="col-12 col-md-3" id="help">
 					<h5 class="footer-heading">Help</h5>
-					<a href="mailto:fritzermobiledetail@gmail.com" target="_blank">Contact Us</a>
+					<a href="mailto:fritzermobiledetail@gmail.com" target="_blank">Email Us</a>
 					<a href="tel:6199550226">619-955-0226</a>
 				</div>
 			</div>

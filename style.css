@@ -1,12 +1,12 @@
-/** Fonts Start **/
-
-/** Fonts End **/
-
 /** Navbar start **/
 
 .navbar-brand img {
   height: 50px;
   width: 50px;
+}
+.navbar-brand span {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .navbar {
@@ -27,21 +27,19 @@
   font-weight: 600;
   color: #464646 !important;
 }
-.navbar-nav .nav-item .nav-link:hover {
+.navbar-nav .nav-item .nav-link:hover,
+.dropdown-item:hover {
   color: rgb(2, 117, 216) !important;
 }
-/**
+
 .navbar-nav button {
-  border: 1px solid #000000;
-  background-color: #ffffff;
-  margin-left: 20px;
-  height: 100%;
-    padding: 18px 18px;
-}
-**/
-.navbar-nav button {
-  border-radius: 0%;
+  border-radius: 5px;
   text-transform: uppercase;
+}
+.navbar-nav button:hover {
+  background-color: transparent;
+  border-color: rgb(2, 117, 216);
+  color: rgb(2, 117, 216);
 }
 
 /** Navbar end **/
@@ -58,16 +56,43 @@
   background-attachment: fixed;
 }
 #header-inner {
-  padding-top: 35%;
-
-  margin-left: 2rem;
+  padding-top: 75%;
+  margin-left: 1rem;
 }
+
 #hero-header {
   letter-spacing: 0.3rem;
   text-shadow: 2px 2px 4px #000000;
+  font-size: 27px;
 }
 #hero-p {
   line-height: 2.2;
+}
+.hero-btn-a:hover {
+  text-decoration: none;
+}
+#hero-button {
+  display: block;
+  margin-bottom: 0.75rem;
+  border-style: solid;
+  text-transform: uppercase;
+}
+#hero-button:hover {
+  background-color: #fff;
+  color: rgb(2, 117, 216);
+  text-decoration: none !important;
+
+  border-style: solid;
+  text-transform: uppercase;
+}
+#hero-phone-btn {
+  background-color: ;
+  border-style: solid;
+  padding: 5px, 8px, 8px, 5px !important;
+  text-transform: uppercase;
+}
+#hero-phone-btn:hover {
+  border-color: #fff;
 }
 /**======== Hero header end ========**/
 
@@ -96,7 +121,12 @@
 .overlay-cards p {
   color: #7e7e7e;
   line-height: 1.5;
+
   /* 5a5a5a */
+}
+#bootstrap-overides .top-cards {
+  font-weight: 300;
+  color: #5b5b5b;
 }
 
 .overlay-bodies {
@@ -136,6 +166,8 @@
   font-weight: 500;
   letter-spacing: 0.4rem;
   z-index: 2;
+  text-transform: uppercase;
+  color: rgb(2, 117, 216);
 }
 
 .p-text .border {
@@ -148,6 +180,10 @@
 
 /**======= Detailing services start =======**/
 
+#service-inner {
+  justify-content: center;
+  display: flex;
+}
 #detail-services {
   letter-spacing: 0.2rem;
   color: #464646;
@@ -161,17 +197,45 @@
 .service-img {
   width: 100%;
   height: auto;
+  border-radius: 4px;
 }
 
 #bootstrap-overides .card-header {
   background-color: #ffffff;
   color: #464646;
   border-bottom: none !important;
+  align-items: center;
+  justify-content: center;
 }
 #bootstrap-overides .card-header h3 {
   color: rgb(2, 117, 216);
   font-weight: 300;
   letter-spacing: 0.2rem;
+}
+#bootstrap-overides .card-header p {
+  font-size: 14px;
+  padding: 0.1rem;
+}
+.services-costs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.top-pr {
+  display: flex;
+}
+
+.services-costs span {
+  color: rgb(2, 117, 216);
+}
+.service-span {
+  color: rgb(2, 117, 216);
+}
+.service-hours {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card-effect {
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
@@ -193,17 +257,19 @@
 }
 .card-body ul {
   list-style-type: none;
+  font-size: 14px;
+}
+.card-body p {
+  font-weight: 500;
+  color: #444444;
 }
 .detail-row {
   margin-bottom: 2rem;
 }
-.glass {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(30px) !important;
-  border-radius: 5px;
-  border: 2px solid transparent;
-  background-clip: padding-box;
+#standard-btn {
+  margin-top: 2.5rem;
 }
+
 /**======== Detailing services end ======**/
 /**======== Additional Services start ====**/
 .additional {
@@ -313,5 +379,33 @@ p {
 @media only screen and (max-width: 1195px) {
   .add h3 {
     font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #header-inner {
+    padding-top: 35%;
+    margin-left: 3rem;
+  }
+  #hero-header {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #header-inner {
+    padding-top: 35%;
+    margin-left: 3rem;
+  }
+  #hero-header {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #header-inner {
+    padding-top: 15%;
+    margin-left: 3rem;
+  }
+  #hero-header {
+    font-size: 4rem;
   }
 }
