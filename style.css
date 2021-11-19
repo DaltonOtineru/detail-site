@@ -15,8 +15,12 @@
 }
 
 .navbar-header .navbar-brand {
-  letter-spacing: 0.1rem;
-  color: rgb(2, 117, 216) !important;
+  letter-spacing: 0.1rem !important;
+  color: #464646 !important;
+}
+#bootstrap-overides .knot {
+  filter: invert(24%) sepia(79%) saturate(2451%) hue-rotate(193deg)
+    brightness(101%) contrast(98%);
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -358,11 +362,11 @@ form input::placeholder {
   padding-bottom: 1rem;
 }
 #Fname-box {
-  width: 48%;
+  width: 49%;
   padding: 0.5rem;
 }
 #Lname-box {
-  width: 48%;
+  width: 49%;
   padding: 0.5rem;
 }
 .contact-info-div {
@@ -371,11 +375,11 @@ form input::placeholder {
   padding-bottom: 1rem;
 }
 #Mail-box {
-  width: 48%;
+  width: 49%;
   padding: 0.5rem;
 }
 #Phone-box {
-  width: 48%;
+  width: 49%;
   padding: 0.5rem;
 }
 .messages-div {
@@ -438,6 +442,11 @@ textarea {
   padding-bottom: 3rem;
   min-height: 20vh;
 }
+.footer-link-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
 
 .footer-heading {
   color: rgb(2, 117, 216);
@@ -447,10 +456,10 @@ textarea {
 #help {
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
   line-height: 2rem;
-  padding-left: 2rem !important;
+  margin: 1.5rem;
 }
+
 #links a,
 #help a {
   text-decoration: none;
@@ -481,11 +490,13 @@ textarea {
   }
 }
 
+/* additional services start */
 @media only screen and (max-width: 1030px) {
   .additional-inner {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .add {
     width: 90%;
@@ -493,7 +504,7 @@ textarea {
     margin-top: 2rem;
   }
   .add img {
-    width: 100%;
+    width: 70%;
     height: auto;
     border-radius: 5px;
     filter: brightness(85%);
@@ -505,8 +516,15 @@ textarea {
     font-size: 24px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .add img {
+    width: 90%;
+  }
+}
+/* additional services end */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 766px) {
+  /* header */
   #header-inner {
     padding-top: 35%;
     margin-left: 3rem;
@@ -514,7 +532,14 @@ textarea {
   #hero-header {
     font-size: 35px;
   }
+  /* footer */
+  #links,
+  #help {
+    margin: 4rem;
+  }
 }
+
+/* header start */
 @media only screen and (min-width: 992px) {
   #header-inner {
     padding-top: 35%;
@@ -533,3 +558,48 @@ textarea {
     font-size: 4rem;
   }
 }
+/* header end */
+
+/* Contact form start */
+@media only screen and (max-width: 600px) {
+  .form-inner {
+    width: 90%;
+  }
+  .name-div {
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .contact-info-div {
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  #Fname-box {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  #Lname-box {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  #Mail-box {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  #Phone-box {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .carDetailBox {
+    margin-bottom: 0.5rem;
+  }
+  .navbar-brand span {
+    font-size: 1.3rem;
+  }
+}
+/* Contact form end */

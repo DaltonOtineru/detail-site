@@ -16,6 +16,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
 	<!-------- Title ------->
     <title>Fritzer Mobile Detailing</title>
+	<!-- Fav icon -->
+	<link rel="icon" href="img/cknot.svg">
   </head>
   <body id="bootstrap-overides">
   	
@@ -24,7 +26,7 @@
   	<nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbar">
   		<div class="container navbar-header align-center text-center">
   			<a class="navbar-brand align-items-center" href="#">
-  				<img src="img/cknot.svg">
+  				<img src="img/cknot.svg" class="knot">
   				<span>Fritzer Mobile Detail</span>  
   			</a>
   			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,9 +54,9 @@
 						</ul>
 					</li>
 					<li>
-						<a href="mailto:fritzermobiledetail@gmail.com" target="_blank"><button class="btn btn-lg btn-primary ms-3" type="button" >
-							Schedule A Detail
-						</button></a>
+						<a href="#footer"><button class="btn btn-lg btn-primary ms-3" type="button">Schedule a Detail</button> 
+							
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -62,17 +64,17 @@
 	</nav>
   					
   				
+	<!-- navbar section end -->
 
-  	<!-- navbar section end -->
+	<!-- Hero section start -->
 
-  	<!-- Hero section start -->
       <div class="container-fluid" id="header">
           <div class="header-inner" id="header-inner">
               <div class="row">
                   <div class="col-12 col-md-10 col-lg-8 text-white" id="header-text">
                       <h1 class="display-4" id="hero-header">Fritzer Mobile Detail</h1>
                       <p class="lead" id="hero-p"> I am a San Diego native serving all of San Diego for your vehicles necessities. </p>
-                      <a href="mailto:fritzermobiledetail@gmail.com" target="_blank" class="hero-btn-a"><button class="button btn-lg btn-primary" id="hero-button">Schedule A Detail</button></a>
+                      <a href="#footer" class="hero-btn-a"><button class="button btn-lg btn-primary" id="hero-button">Schedule A Detail</button></a>
 					  <a href="tel:6199550226">
 						  <button class="button btn-lg btn-outline-primary" id="hero-phone-btn" >Call Now</button>
 					  </a>
@@ -81,10 +83,10 @@
           </div>
       </div>
                   
+  	<!-- Hero section End -->
                 
                             
 
-  	<!-- Hero section End -->
       
     <!--==== Card overlap start =====-->
 
@@ -344,11 +346,12 @@
 			</div>
 		</div>
 	</div>
+	
+	<!-- Detailing Services section End-->
 			
 	
 	
 
-	<!-- Detailing Services section End-->
 	 <!--Additional services start -->
 	 <div class="container additional-container">
 		<h3 class="text-center additional">- Additional Services -</h3>
@@ -377,23 +380,17 @@
 
 	<!-- Additional services end -->
 
-	<!-- Contact Us section start-->
 
-
-
-	<!-- Contact Us section end-->
-
-	
 	<!-- Footer section start-->
 
 	<div class="footer" id="footer">
 		<div class="container">
+			<!-- Contact form  start -->
 			<div class="form-container">
 				<div class="form-inner">
 					<form action="https://formspree.io/f/mleaqvrl" method="POST">
 						<div class="form-header">
 							<h4>Contact</h4>
-							<!-- <p>Please include your preffered time & location, as well as vehicle make & model if you're scheduling a detail.</p> -->
 						</div>
 						<div class="name-div">
 							<input type="text" name="Fname" id="Fname-box" placeholder="First Name" autocomplete="off" required>
@@ -403,36 +400,37 @@
 							<input type="email" name="Email" id="Mail-box" placeholder="Email Address" autocomplete="off" required>
 							<input type="tel" name="Phone" id="Phone-box" placeholder="Phone Number" autocomplete="off" required>
 						</div>	
-						<!-- <div class="phone-div">
-							<input type="tel" name="Phone" id="Phone-box" placeholder="Phone Number" autocomplete="off" required>
-						</div> -->
+						
 						<div class="messages-div">
 							<textarea name="Message" rows="1" class="carDetailBox" placeholder="Vehicle make & model" required></textarea>
 							<textarea name="Message" rows="4"class="msgBox" placeholder="Send us a message" required></textarea>
 						</div>
-						<div class="pt-2 caption text-muted">If you're scheduling a detail, please include your preferred time and location.</div>
+						<div class="pt-2 caption text-muted">* If you're scheduling a detail, please include your preferred time and location.</div>
 						<div class="button-div">
 							<button type="submit" class="form-button">Submit</button>
 						</div>
-						
 					</form>
 				</div>
 			</div>
-			<div class="row footer-row justify-content-center">
-				<div class="col-12 col-md-3" id="links">
+			<!-- Contact form  end -->
+			<!--footer links start-->
+			<div class="footer-link-container">
+				<div class="footer-links" id="links">
 					<h5 class="footer-heading">Links</h5>
 					<a href="mailto:fritzermobiledetail@gmail.com" target="_blank">Book a Detail</a>
 					<a href="#service">Detail Packages</a>
 					<a href="#">Testimonials</a>
 				</div>
-				<div class="col-12 col-md-3" id="help">
-					<h5 class="footer-heading">Help</h5>
+				<div class="footer-links" id="help">
+					<h5 class="footer-heading">Contact</h5>
 					<a href="mailto:fritzermobiledetail@gmail.com" target="_blank">Email Us</a>
 					<a href="tel:6199550226">619-955-0226</a>
 				</div>
 			</div>
 		</div>
 	</div>
+						
+							
 
 				
 	<!-- Footer section end-->
